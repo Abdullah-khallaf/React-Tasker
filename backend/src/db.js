@@ -5,7 +5,9 @@ const db = new Database(
   path.join(__dirname, '../database/tasker.db')
 );
 
-// Create tables if they don't exist
+
+db.pragma('foreign_keys = ON');
+
 db.exec(`
   CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
