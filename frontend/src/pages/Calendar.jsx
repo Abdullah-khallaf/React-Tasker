@@ -28,9 +28,8 @@ console.log(endOfMonth(new Date("2026-01-21")));
 function Calendar() {
     return (
         <>
-           <p>
+           <p className="bg-blue-500 text-white p-4"> 
               Today Date:
-              <hr></hr>
               {Today}
            </p>
         </>
